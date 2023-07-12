@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <nav>
+    <h1>We help people get jobs.</h1>
+    <div class="search-box">
+      <form action="/search" method="GET">
+        <label for="search-input"></label>
+        <div><input type="text" id="search-input" name="query" placeholder="Search Jobs Here"></div>
+        <div><button type="button" class="btn btn-success">Find Jobs</button></div>
+      </form>
+    </div>
+  </nav>
+
+  <section class="section section2">
+    <div class="row">
+      <div class="column column1">
+        <img src="{{url_for('static', filename='/img/carrier-img.jpg') }}" width="750px" height="450px">
+      </div>
+      <div class="column column2">
+        <div class="decor">
+        <h4 style="color: #595959;">Our Mission</h4>
+        <h1>Come help Indeed work</h1>
+        <p>We're looking to grow our teams with people who share our energy and enthusiasm for creating the best experience for job seekers and employers.</p>
+        <p>Our mission is to create products that provide opportunities for all job seekers. To do this, we hire Indeedians of all backgrounds to mirror the job seekers we support. That's why Inclusion and Belonging are core values inside Indeed.</p>
+        <form action="#" method="GET">
+        <div><button type="button" class="btn1">Join Us</button></div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section class="section section3">
+    <div class="row">
+      <div class="column column3">
+        <div class="decor">
+        <h4 style="color: #595959;">Benefits</h4>
+        <h1>Save time and effort in your hiring journey.</h1>
+        <p>Finding the best fit for the job shouldn’t be a full-time job. Indeed’s simple and powerful tools let you source, screen, and hire faster.</p>
+        <h1>Work well. Live well.</h1>
+        <p>In addition to our powerful mission of helping people get jobs, there are plenty of reasons to come work with us. We’ve assembled an extensive Total Rewards package of perks, programs and benefits that show how much we value our people, whether they’re inside Indeed or out.</p>
+        </div>
+        <form action="#" method="GET">
+        <div><button type="button" class="btn1">Explore</button></div>
+        </form>
+      </div>
+      <div class="column column4">
+        <img src="{{url_for('static', filename='/img/home_bg.jpg') }}" width="550px" height="320px">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section4">
+
+    <div class="float-container1">
+      <div class="float-box1">
+        <h4 style="color: #595959;">Learn</h4>
+        <h1>Get to know us better</h1>
+        <p>Dive deeper into our stories. Read our culture blog!</p>
+          </div>
+      <div class="float-box1 fb-2">
+        <form action="#" method="GET">
+        <div><button type="button" class="btn1">More articles</button></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="float-container2">
+      <div class="float-box2">
+        <img src="{{url_for('static', filename='/img/learn1.jpg') }}" width="336" height="auto">
+        <h4>Mission</h4>
+        <h2>5 core values that guide us inside Indeed</h2>
+        <h5>Inside Indeed • October 19, 2020</h5>
+        <p>Learn the 5 defining values that helped Indeed become an industry leader and will continue to guide us as we look to change the way people get jobs in the future.</p>
+        <img src="{{url_for('static', filename='/img/arrow-symbol.png') }}" width="50" height="auto">
+      </div>
+      <div class="float-box2">
+        <img src="{{url_for('static', filename='/img/learn2.jpg') }}" width="336" height="auto">
+        <h4>Life #insideindeed • Perks & Benefits</h4>
+        <h2>5 core values that guide us inside Indeed</h2>
+        <h5>Inside Indeed • November 10, 2022</h5>
+        <p>Indeed employees have the following workspace options depending on job role eligibility: In-Office, Remote, or a combination of both called Flex.</p>
+        <img src="{{url_for('static', filename='/img/arrow-symbol.png') }}" width="50" height="auto">
+      </div>
+      <div class="float-box2">
+        <img src="{{url_for('static', filename='/img/learn3.jpg') }}" width="336" height="auto">
+        <h4>Life #insideindeed • Perks & Benefits</h4>
+        <h2>What are Flex Working Options #insideindeed?</h2>
+        <h5>Inside Indeed • November 2, 2022</h5>
+        <p>Each month Indeed takes a company-wide day off. Yep, we shut down and give you a day to recharge and renew in a way that’s meaningful to you. No strings, no work, all YOU!</p>
+        <img src="{{url_for('static', filename='/img/arrow-symbol.png') }}" width="50" height="auto">
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="https://www.indeed.jobs/wp-content/uploads/2021/03/benefits-health.svg" >
+        <h3>Health</h3>
+        <p>From wellness programs that support you mentally and physically, to a variety of benefits to keep you and your families healthy and happy, Indeed's got you covered!</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://www.indeed.jobs/wp-content/uploads/2021/03/benefits-wealth.svg">
+        <h3>Wealth</h3>
+        <p>Whether it's helping you prepare for retirement or compensating those who stay with us long term, we help Indeedians build their financial future!</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://www.indeed.jobs/wp-content/uploads/2021/03/benefits-opportunity.svg">
+        <h3>Opportunity</h3>
+        <p>Our growth powers Indeed. That's why we provide training and development opportunities that help Indeedians grow with Indeed and beyond.</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://www.indeed.jobs/wp-content/uploads/2021/03/benefits-flexibility.svg">
+        <h3>Flexibility</h3>
+        <p>Our flexible paid time off policy gives you time away to relax, explore and take care of life's unexpected surprises, keeping you fresh and focused at work and in life.</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://www.indeed.jobs/wp-content/uploads/2021/03/benefits-family.svg">
+        <h3>Family</h3>
+        <p>We care about what you care about. We have a multitude of benefits to support Indeedians, as well as their pets, kids and partners that make up our extended family.</p>
+      </div>
+      <div class="flex-item">
+        <img src="https://www.indeed.jobs/wp-content/uploads/2021/03/benefits-connection.svg">
+        <h3>Connection</h3>
+        <p>Our Employee Experience team helps Indeedians connect through activities and events that allow us to share our passions and build relationships beyond the office.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section6">
+    <h4 style="color: #595959;">Students</h4>
+    <h1>We help students get jobs</h1>
+    <div class="row">
+      <div class="column column5">
+         <img src="{{url_for('static', filename='/img/team1.jpg') }}" width="533px" height="300px">
+         <div class="decor">
+           <h2>Internships & University Grads</h2>
+           <p>Make an impact! You’ll be working with real products that impact millions of job seekers around the world.</p>
+         </div>
+      </div>
+      <div class="column column6">
+        <img src="{{url_for('static', filename='/img/team2.jpg') }}" width="533px" height="300px">
+         <div class="decor">       
+           <h2>Emerging Talent</h2>
+           <p>Get all the tools and resources you need to succeed in your new career.<br>
+           Interested in switching careers? We can help make that a reality at Indeed.</p>
+         </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+
+

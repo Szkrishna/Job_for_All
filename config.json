@@ -1,0 +1,11 @@
+{
+    "params":
+    {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/jobforall",
+        "prod_uri": "mysql://root:@localhost/jobforall",
+        "gmail-user": "krisnas9792@gmail.com",
+        "gmail-password": "bgnjchwpuqrszdec",
+        "no_of_jobs": 2
+    }
+}

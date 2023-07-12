@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .login-signup-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    
+    .form-field label {
+      margin-bottom: 5px;
+    }
+    
+    .form-field input {
+      padding: 10px;
+    }
+    
+    .form-field button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .form-field .form-link {
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    .form-link a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>User Dashboard</h1>
+  </header>
+    <section>
+    <!-- Login form -->
+    <div class="login-signup-form">
+      <h3 class="form-title">Login</h3>
+      <form action="/login" method="post">
+        <div class="form-field">
+          <label for="login-username">Username:</label>
+          <input type="text" id="login-username" name="username" required>
+        </div>
+
+        <div class="form-field">
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" name="password" required>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="form-link">
+          Don't have an account? <a href="/signup">Sign up</a>
+        </div>
+      </form>
+    </div>
+    </section>
+
+  <footer>
+    <p>&copy; 2023 User Dashboard. All rights reserved.</p>
+  </footer>
+</body>
+</html>

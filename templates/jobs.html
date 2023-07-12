@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <section class="jobs row">
+    <h1>Programming Jobs</h1>
+    {% for job in jobs %}
+      <div class="job-card column column1">
+        <h3 class="job-title">{{job.title}}</h3>
+        <p class="job-company">{{job.company}}</p>
+        <p class="job-location">{{job.location}}</p>
+        <p class="job-description">{{job.description}}</p>
+      </div>
+      <div class="apply column column2"><a href="#"><button>Apply</button></a></div>
+    {% endfor %}
+
+  </section>
+
+  <div class="button-container">
+      <a href="{{prev}}"><button class="previous-button"> &larr; Previous</button></a>
+      <a href="{{next}}"><button class="next-button">Next  &rarr; </button></a>
+  </div>
+
+{% endblock %}
